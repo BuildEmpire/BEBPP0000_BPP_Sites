@@ -1,21 +1,16 @@
-{
-  "sources": {
-    "cookbook_dotcloud": {
-      "locked_version": "0.0.1",
-      "git": "git://github.com/BuildEmpire/BEBUI0000_Cookbook_DotCloud.git",
-      "ref": "a1842b2c069b91e6dca4af68f82e9ad1c08d2185"
-    },
-    "python": {
-      "locked_version": "1.4.6"
-    },
-    "build-essential": {
-      "locked_version": "2.0.0"
-    },
-    "yum-epel": {
-      "locked_version": "0.3.6"
-    },
-    "yum": {
-      "locked_version": "3.2.0"
-    }
-  }
-}
+DEPENDENCIES
+  cookbook_dotcloud
+    git: git://github.com/BuildEmpire/BEBUI0000_Cookbook_DotCloud.git
+    revision: a1842b2c069b91e6dca4af68f82e9ad1c08d2185
+  python
+
+GRAPH
+  build-essential (2.1.2)
+  cookbook_dotcloud (0.0.1)
+    python (>= 0.0.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  yum (3.4.0)
+  yum-epel (0.5.1)
+    yum (~> 3.0)
