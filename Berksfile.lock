@@ -1,16 +1,32 @@
 DEPENDENCIES
   cookbook_dotcloud
     git: git://github.com/BuildEmpire/BEBUI0000_Cookbook_DotCloud.git
-    revision: a1842b2c069b91e6dca4af68f82e9ad1c08d2185
+    revision: 7d43e48ffa478f5f029ddedb038bac89f3ee37bd
   python
 
 GRAPH
-  build-essential (2.1.2)
-  cookbook_dotcloud (0.0.1)
+  build-essential (2.2.2)
+  chef_handler (1.1.6)
+  cookbook_dotcloud (0.0.3)
+    git (>= 0.0.0)
     python (>= 0.0.0)
+  dmg (2.2.2)
+  git (4.1.0)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
   python (1.4.6)
     build-essential (>= 0.0.0)
     yum-epel (>= 0.0.0)
-  yum (3.4.0)
-  yum-epel (0.5.1)
+  runit (1.5.18)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  windows (1.36.6)
+    chef_handler (>= 0.0.0)
+  yum (3.5.3)
+  yum-epel (0.6.0)
     yum (~> 3.0)

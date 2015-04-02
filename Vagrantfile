@@ -14,6 +14,7 @@ Vagrant.configure("2") do |config|
   config.vm.provider :virtualbox do |vb|
     vb.customize ["modifyvm", :id, "--memory", 2048]
   end
+  config.vm.synced_folder '~/.ssh/', '/ssh/'
   config.vm.provision :shell, :path => 'configure.sh'
   config.vm.provision :chef_solo do |chef|
     chef.json = chef_configuration
